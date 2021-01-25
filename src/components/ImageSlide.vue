@@ -4,6 +4,8 @@
     </div>
 </template>
 <script>
+    import axios from 'axios';
+
     export default {
         name: 'image-slide',
         data() {
@@ -20,6 +22,7 @@
         },
         mounted() {
             this.slideShow();
+            this.axiosTest();
         },
         methods: {
             slideShow() {
@@ -33,8 +36,14 @@
                 }
                 setTimeout(() => {
                     this.slideShow();
-                }, 3000)
+                }, 4000)
 
+            },
+            axiosTest() {
+                // let attest = await axios.get('./test.json');
+                axios.get('./test.json').then(res => {
+                    console.log(res);
+                })    
             }
         }
     }
