@@ -40,11 +40,16 @@
 
             },
             axiosTest() {
-                // let attest = await axios.get('./test.json');
+               // let attest = await axios.get('./test.json');
                 axios.get('./test.json').then(res => {
                     console.log(res);
                 })    
-            }
+            },
+            prevClick(){
+
+            },
+            nextClick(){}
+            
         }
     }
 </script>
