@@ -48,8 +48,10 @@
             prevClick(){
 
             },
-            nextClick(){}
-            
+            nextClick(){
+                
+            }
+
         }
     }
 </script>
