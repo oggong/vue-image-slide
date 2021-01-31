@@ -1,6 +1,8 @@
 <template>
     <div class="box" style="width:1100px; height: 600px; box-shadow: 0 0 25px -3px rgba(0,0,0, 0.4);">
         <img class="w-100 h-100" :src="image"/>
+        <b-button @click="prevClick">이전 사진</b-button>
+        <b-button @click="nextClick">다음 사진</b-button>
     </div>
 </template>
 <script>
@@ -46,10 +48,10 @@
                 })    
             },
             prevClick(){
-
+              
             },
             nextClick(){
-                
+
             }
 
         }
