@@ -48,10 +48,10 @@
                 })    
             },
             prevClick(){
-              
+                this.image = this.images[this.i - 1];
             },
             nextClick(){
-
+                this.image = this.images[this.i + 1];
             }
 
         }
